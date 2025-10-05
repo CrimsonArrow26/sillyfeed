@@ -1574,8 +1574,8 @@ img {
 }
 
 #loader{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: #000;
     position: fixed;
     z-index: 999;
@@ -1584,6 +1584,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0 5vw;
 }
 
 #loader h1{
@@ -1593,6 +1595,9 @@ img {
     background-clip: text;
     -webkit-background-clip: text;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
     animation-name: load;
     animation-duration: 1s;
@@ -1626,6 +1631,18 @@ img {
     #loader h1 {
         font-size: 9vw;
     }
+
+    #loader {
+        flex-direction: column;
+        gap: 4vw;
+        padding: 0 6vw;
+    }
+
+    #loader h1 {
+        position: static;
+        transform: none;
+    }
+
 
     
 .meme-title {
