@@ -75,7 +75,7 @@ html, body {
 }
 
 nav {
-    padding: 2vw 3vw;
+    padding: 0.5vw 3vw;
     width: 100%;
     background: linear-gradient(135deg, #f7e3c8, #f0d4a8);
     display: flex;
